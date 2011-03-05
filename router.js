@@ -19,6 +19,9 @@
  * The class also serves static files and these take priority over routes.
  * You shouldn't serve large files from this class, as the file serving operates in read-whole-file-mode.
  * Routes should be added in order of priority, i.e. '/' should probably be last, as it matches everything.
+ *
+ * TODO: chunked file serving
+ * TODO: blockable paths to prevent source code serving
  */
 
 module.exports = function(debug) {
