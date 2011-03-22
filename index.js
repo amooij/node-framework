@@ -1,5 +1,5 @@
 var http = require('http');
-var Router = require('./router');
+var Router = require('./lib/router');
 
 
 router = new Router(true);
